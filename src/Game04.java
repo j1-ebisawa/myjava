@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
-import java.io.IOException; 
+import java.io.IOException;
 import java.io.InputStream;
 
 import javax.imageio.ImageIO;
@@ -42,13 +42,14 @@ public class Game04 {
     	JTextField p1, p2, p3, p4;
     	JTable com_tbl;
     	DefaultTableModel tbl_model;
-    	
+
     	public MyScreen(){
 
 
     		setTitle("複雑なレイアウトのテスト");
     		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-    		setSize(800, 600);
+    		//setSize(800, 600);
+    		setSize(900, 600);
 
     		setLayout(new BorderLayout());
     		JPanel northpane = new JPanel();
@@ -144,7 +145,7 @@ public class EastPanel extends JPanel
 
         			com_tbl = new JTable(tbl_model);
                     com_tbl.addMouseListener(this);
- 
+
         			JScrollPane sp = new JScrollPane(com_tbl);
         			sp.setPreferredSize(new Dimension(350,400));
         			add(sp);
@@ -180,19 +181,19 @@ public class EastPanel extends JPanel
 
             	}
             	public void mouseEntered(MouseEvent e){
-            	    
+
             	  }
 
             	public void mouseExited(MouseEvent e){
-            	    
+
             	  }
 
             	public void mousePressed(MouseEvent e){
-            	    
+
             	  }
 
             	public void mouseReleased(MouseEvent e){
-            	   
+
             	  }
 }
 
