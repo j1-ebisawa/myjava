@@ -48,8 +48,8 @@ public class Game04 {
 
     		setTitle("複雑なレイアウトのテスト");
     		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-    		setSize(800, 600);
-    		//setSize(900, 600);
+    		//setSize(800, 600);
+    		setSize(900, 600);
 
     		setLayout(new BorderLayout());
     		JPanel northpane = new JPanel();
